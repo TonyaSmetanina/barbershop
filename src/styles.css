@@ -55,7 +55,7 @@ a{
 }
 
 .menu-items li{
-    font-size: 3.6rem;
+    font-size: 3rem;
     list-style-type: none;
     margin: 0px 11% 0 11%;
     font-style: italic;
@@ -206,7 +206,7 @@ a{
 }
 
 p {
-    font-size: 3.6rem;
+    font-size: 2.6rem;
     font-style: italic;
     margin: 2% auto;
 }
@@ -242,7 +242,7 @@ p {
 /* screen3 */
 
 .title {
-    font-size: 6.6rem;
+    font-size: 5.6rem;
     height: 10vh;
     display: flex;
     align-items: center;
@@ -307,10 +307,11 @@ p {
     display: flex;
     justify-content: space-evenly;
     max-width: 100%;
+    align-items: center;
 }
 
 .form-title {
-    font-size: 6.4rem;
+    font-size: 5.4rem;
     text-align: center;
     font-style: italic;
     margin-bottom: 4%;
@@ -321,7 +322,7 @@ p {
 
 .form-left {
   align-items: center;
-  max-width: 60%;
+  width: 40%;
   margin-top: 4%;
 }
 
@@ -365,7 +366,7 @@ p {
 }
 
 .map-right {
-    width: 30%;
+    width: 33%;
     margin-top: 5%;
 
 }
@@ -373,7 +374,7 @@ p {
 .footer {
     display: flex;
     justify-content: space-evenly;
-    font-size: 3.6rem;
+    font-size: 2.6rem;
     text-align: center;
     font-style: italic;
     margin-bottom: 4%;
@@ -386,7 +387,7 @@ p {
     font-style:none;
     font-weight: 700;
     font-style:normal;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .soc-networks {
