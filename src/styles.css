@@ -1,0 +1,422 @@
+@import url(./animation.css);
+
+html {
+    font-family: 'Rosario', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    max-height: 20%;
+    background-color: #000000;
+    font-size: 3.6rem;
+    color: #ffff;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* max-height: 90px; */
+    width: 100%;
+}
+
+.logo {
+    padding-left: 0%;
+    /* position: relative; */
+    background-color: #ffff;
+    width: 10%;
+    min-height: 100%;
+    align-self: stretch;
+}
+
+.logo img {
+    width: 100%;
+    padding-top: 12%;
+}
+
+.menu-items ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    width: 35%;
+}
+
+.menu-items li{
+    font-size: 3.6rem;
+    list-style-type: none;
+    margin: 0px 11% 0 11%;
+    font-style: italic;
+}
+
+.menu-items a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.menu-items a:hover{
+    color: #000000;
+    cursor: pointer;
+}
+
+/* screen-1 */
+
+.gallery {
+    width: 100%;
+    /* min-height: 85vh; */
+    overflow: hidden;
+}
+
+.gallery-box {
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+
+.gallery-box > div {
+    width: 22%;
+}
+
+.gallery-img-two-left, 
+.gallery-img-two-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+}
+
+.gallery-img-two-left {
+    transform: translateY(-100vh);
+    animation: imgShowLeft 1s linear 1 forwards;
+
+}
+
+.gallery-img-two-right {
+    transform: translateY(100vh);
+    animation: imgShowRight 1s linear 1 forwards;
+
+}
+
+.gallery-img-two-left img, 
+.gallery-img-two-right img {
+    width: 100%;
+}
+
+.gallery-img-two-left > div:first-child {
+    height: 36%;
+    margin-bottom: 24%;
+    
+}
+
+.gallery-img-two-left > div:last-child {
+    height: 40%;
+}
+
+.gallery-img-two-right > div:first-child {
+    height: 36%;
+    margin-bottom: 24%;
+}
+
+.gallery-img-two-right > div:last-child {
+    height: 40%;
+}
+
+.gallery-img1 {
+    max-height: 40%;
+    align-self: center;
+    transform: translateY(-100vh);
+    animation: imgShowLeft 2s linear 1 forwards;
+}
+
+.gallery-img6 {
+    max-height: 40%;
+    align-self: center;
+    transform: translateY(-100vh);
+    animation: imgShowRight 2s linear 1 forwards;
+}
+
+
+.gallery-img1 img,
+.gallery-img6 img {
+    width: 100%;
+}
+
+
+/* screen 2 */
+
+.servises {
+    /* width: 100%; */
+    display: flex;
+}
+
+.servises .servises-curcle {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.servises .servises-curcle > div {
+    height: 50%;
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.servises-bg {
+    width: 100%;
+    height: 100%;
+}
+
+
+.servises-img {
+    width: 40%;
+    display: block;
+}
+
+.servises-img img {
+    width: 100%;
+}
+
+.c {
+    width: 15%;
+    height: 15%;
+}
+
+.c + p {
+    text-align: center;
+}
+
+p {
+    font-size: 3.6rem;
+    font-style: italic;
+    margin: 2% auto;
+}
+
+.curcle-one {
+    top:0;
+    left: 0; 
+    animation: curcle1 5s linear infinite;
+}
+
+.curcle-two {
+    top:0;
+    left: 50%;
+    animation: curcle2 5s linear infinite;
+
+
+}
+
+.curcle-three {
+    top:50%;
+    left:0%;
+    animation: curcle3 5s linear infinite;
+
+
+}
+
+.curcle-four {
+    top:50%;
+    left: 50%;
+    animation: curcle4 5s linear infinite;
+}
+
+/* screen3 */
+
+.title {
+    font-size: 6.6rem;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4% 0;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-evenly;
+    /* height: 80vh; */
+}
+
+.teams > div {
+    /* width: 16%; */
+    position: relative;
+}
+
+.teams:hover > div{
+    filter: brightness(.5);
+}
+
+.teams > div:hover {
+    filter: none;
+}
+
+.teams-one{
+    position: absolute;
+    background-color: #A3530A;
+    opacity: .7;
+    bottom: 0%;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    transition: height 1ms;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-sizing: border-box;
+
+}
+
+.teams > div:hover .teams-one {
+    height: 10%;
+
+}
+
+
+.contacts {
+    /* height: 90vh; */
+    display: flex;    
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: space-evenly;
+    top: 2%;
+}
+
+.contacts-div {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+
+.form-title {
+    font-size: 6.4rem;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 4%;
+}
+.form {
+    padding: 3%;
+}
+
+.form-left {
+  align-items: center;
+  max-width: 60%;
+  margin-top: 4%;
+}
+
+
+.form {
+    background-color: #E5E5E5;
+}
+
+
+.form-message {
+    display: block;
+    width: 100%;
+    
+}
+
+.name-email {
+    width: 100%;
+    display: inline-flex;    
+}
+
+.name-email > input {
+    border: none;
+    padding: 3% 1%;
+    /* margin: 1%; */
+    width: 45%;
+    margin: 1% 2% 2% 0%;
+    
+}
+
+.message > input{
+    border: none;
+    width: 90%;
+
+    padding: 3% 0% 35% 1%;
+    width: 95%;
+
+}
+
+.message > input:focus {
+    border:0;
+}
+
+.map-right {
+    max-width: 30%;
+    margin-top: 5%;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3.6rem;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    font-weight: 600;
+
+  }
+
+.footer > div span {
+    font-style:none;
+    font-weight: 700;
+    font-style:normal;
+    font-size: 4rem;
+}
+
+.soc-networks {
+    margin-bottom: 4%;
+
+}
+
+.footer a {
+    color: #000000;
+}
+
+
+.soc-networks img {
+    margin-top: 5%
+}
+
+.coded p{
+    color: gray;
+    opacity: .8;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #000000;
+    padding: 3% 0;
+    margin: 0;}
+
+.coded a {
+    color: gray;
+}
+
+.coded a:hover {
+    color: gray;
+    opacity: .5;
+}
